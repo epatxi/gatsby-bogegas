@@ -33,6 +33,13 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {        
+        langKeyDefault: 'es',
+        useLangKeyLayout: false
+      }
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
