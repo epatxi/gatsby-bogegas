@@ -15,6 +15,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/noticias`,
+        name: 'noticias',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
@@ -33,13 +40,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {        
-        langKeyDefault: 'es',
-        useLangKeyLayout: false
-      }
-    },
+    
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
